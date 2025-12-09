@@ -16,3 +16,14 @@ how to download genome from the ncbi genome database
 | **Boolean Normalization Method**           | Handle inconsistent true/false formats               |
 | **Failure Logging and Retry**              | Robust workflow with recovery capability             |
 | **Genome/Protein/CDS Retrieval Commands**  | Extract biological sequences                         |
+
+
+### genome download from the BVBRC using p3 CLI method
+```bash
+p3-genome --eq taxon_lineage_names,Shigella \
+          --eq genome_status,Complete \
+          --eq quality,Good \
+          --eq public,true \
+          --select genome_id,genome_name \
+          > shigella_bvbrc_list.tsv
+```
