@@ -27,3 +27,7 @@ p3-genome --eq taxon_lineage_names,Shigella \
           --select genome_id,genome_name \
           > shigella_bvbrc_list.tsv
 ```
+## start with the installation
+```bash
+conda install -c bioconda p3-cli
+```
